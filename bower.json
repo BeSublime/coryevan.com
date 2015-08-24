@@ -1,0 +1,19 @@
+{
+  "name": "coryevan.com",
+  "version": "0.1.0",
+  "authors": [
+    "Cory Evan Wright <besublime@gmail.com> (http://coryevan.com)"
+  ],
+  "license": "MIT",
+  "homepage": "http://coryevan.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mixitup": "~2.1.9"
+  }
+}
