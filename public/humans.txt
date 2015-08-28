@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Cory Evan Wright -- Developer, Designer -- @BeSublime
+
+# THANKS
+
+    Numerous open source projects (see below)
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Normalize.css
+    Skeleton, MixItUp, fullpage.js
