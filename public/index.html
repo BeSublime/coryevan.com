@@ -1,27 +1,58 @@
-<html>
-<head>
-	<title>Cory Evan Wright - Web Developer</title>
-</head>
-<body>
-	<div id="wrapper">
-		<div id="billboard"></div>
-		<div id="work">
-			<div class="category"></div>
-		</div>
-		<div id="about">
-			<h1>
-				About Cory
-			</h1>
-		</div>
-		<div id="contact">
-			<form action="">
-			</form>
-		</div>
-		<footer id="footer">
-			<div id="colophon">
-				This site was handmade without the use of templates, and utilizes the following open-source projects:
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Cory Evan Wright - Web Designer &amp; Developer in Boca Raton, FL</title>
+		<meta name="description" content="The portfolio and blog of Cory Wright, a web developer, designer, and photographer in Boca Raton, Florida.">
+		<meta name="keywords" content="web developer, web designer, web design, web development, photographer, photography, boca raton, freelance">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- fullpage.js -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	</head>
+	<body>
+		<div id="billboard">
+			<div class="section" id="section0">
+				<div class="slide">
+					<h1>Billboard Section</h1>
+				</div>
 			</div>
-		</footer>
-	</div>
-</body>
+		</div>
+		<div id="wrapper">
+			<div id="work">
+				<div class="category"></div>
+			</div>
+			<div id="about">
+				<h1>
+					About Cory
+				</h1>
+			</div>
+			<div id="contact">
+				<form action="">
+				</form>
+			</div>
+			<footer id="footer">
+				<div id="colophon">
+					This site was handmade without the use of templates, and utilizes the following open-source projects:
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('#billboard').fullpage({
+					anchors: ['firstPage'],
+					sectionsColor: ['#4A6FB1'],
+					autoScrolling: false,
+					fitToSection:false,
+					css3: true
+				});
+			});
+		</script>
+	</body>
 </html>

@@ -4,21 +4,48 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+    copy: {
+      js: {
+        files: [
+          {
+            cwd: 'bower_components/mixitup/build/',
+            src: '**',
+            dest: 'public/js/',
+            expand: true
+          },
+          {
+            cwd: 'bower_components/fullpage.js/',
+            src: 'jquery.fullPage.min.js',
+            dest: 'public/js/',
+            expand: true
+          },
+          // jquery
+          {
+            cwd: 'bower_components/jquery/dist/',
+            src: 'jquery.min.js',
+            dest: 'public/js/',
+            expand: true
+          }
+        ]
       },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+      css: {
+        files: [
+          {
+            cwd: 'bower_components/fullpage.js/',
+            src: 'jquery.fullPage.css',
+            dest: 'public/css/',
+            expand: true
+          }
+        ]
       }
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  // Default task(s)
+  grunt.registerTask('copyall', ['copy:js', 'copy:css']);
+  grunt.registerTask('default', ['copyall']);
 
 };
