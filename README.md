@@ -1,7 +1,12 @@
 coryevan.com
-------------
-
+============
 The personal website of [Cory Evan Wright](http://coryevan.com).
+
+To Do
+-----
+- [ ] Implement RequireJS
+- [ ] Convert static site to [Craft](http://buildwithcraft.com/) templates
+- [ ] Zepto?
 
 License
 -------
