@@ -8,11 +8,13 @@ module.exports = function(grunt) {
       js: {
         files: [
           {
+            // mixitup
             cwd: 'bower_components/mixitup/build/',
             src: '**',
             dest: 'public/js/',
             expand: true
           },
+          // fullpage.js
           {
             cwd: 'bower_components/fullpage.js/',
             src: 'jquery.fullPage.min.js',
@@ -30,9 +32,17 @@ module.exports = function(grunt) {
       },
       css: {
         files: [
+          // fullpage.js
           {
             cwd: 'bower_components/fullpage.js/',
             src: 'jquery.fullPage.css',
+            dest: 'public/css/',
+            expand: true
+          },
+          // skeleton
+          {
+            cwd: 'bower_components/skeleton-css/css/',
+            src: '**',
             dest: 'public/css/',
             expand: true
           }

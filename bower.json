@@ -16,6 +16,7 @@
   "dependencies": {
     "mixitup": "~2.1.9",
     "jquery": "1.11.3",
-    "fullpage.js": "~2.6.9"
+    "fullpage.js": "~2.6.9",
+    "skeleton-css": "~2.0.4"
   }
 }
