@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Cory Evan Wright - Web Designer &amp; Developer in Boca Raton, FL</title>
+		<meta name="description" content="The portfolio and blog of Cory Wright, a web developer, designer, and photographer in Boca Raton, Florida.">
+		<meta name="keywords" content="web developer, web designer, web design, web development, photographer, photography, boca raton, freelance">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- skeleton -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+
+		<!-- fullpage.js -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+		<style>
+			#section0  {
+				background: url(images/everglades-panorama-compressor.jpg) no-repeat center center;
+				background-size: contain;
+				text-align: center;
+			}
+			.nameplate {
+				padding: 0 20px;
+				margin-top: -50px;
+			}
+			#about ul {
+				padding-left: 24px;
+			}
+			#colophon {
+				display: none;
+			}
+			footer {
+				margin: 21px 0 42px;
+				padding-top: 12px;
+				border-top: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="billboard">
+			<div class="section" id="section0">
+				<img class="nameplate u-max-full-width" src="images/cew-wordmark-white.png">
+			</div>
+		</div>
+		<div class="container">
+			<!-- <div id="work" class="row">
+				<div class="category"></div>
+			</div> -->
+			<div id="about" class="row">
+				<div class="content spanning twelve columns">
+					<h1>
+						About Cory
+					</h1>
+					<h3>
+						Who I am:
+					</h3>
+					<p>
+						I&#8217;m a web developer and designer with an <abbr title="Management Information Systems">MIS</abbr> degree from <abbr title="University of South Florida">USF</abbr>.<br>
+						I&#8217;m 30 and live in South Florida with my better half.
+					</p>
+					<h3>
+						What I do:
+					</h3>
+					<p>
+						I make websites for the fine people at <a onclick="javascript:_gaq.push(['_trackPageview', '/out/www.jardencs.com/']);" href="http://www.jardencs.com/">Jarden Consumer Solutions</a>, whose brands include Mr. Coffee, Crock-Pot, and Sunbeam. I also make photographs and music, try to travel often, and have a healthy obsession with indie video games.<br>
+						I love my wife, family, friends, dogs, cats, and life. I love comma separated lists of things, but have only recently become a fan of the Oxford Comma.<br>
+						I live for interaction, conversation, and timeless experiences.<br>
+					</p>
+					<h3>
+						Where to find me:
+					</h3>
+					<p style="margin-bottom: 10px;">
+						You can get in touch with me via CoryEvan {at} gmail.com, or check out my:
+					</p>
+					<ul>
+						<li><a href="http://twitter.com/BeSublime">tweets</a> on Twitter (@BeSublime),</li>
+						<li><a href="http://www.flickr.com/photos/BeSublime">photos</a> on Flickr,</li>
+						<li><a href="https://github.com/BeSublime">code</a> on github,</li>
+						<li><a href="https://careers.stackoverflow.com/cory">r&eacute;sum&eacute;</a> on Stack Overflow Careers,</li>
+						<li><a href="http://pinboard.in/u:BeSublime">bookmarks</a> on Pinboard, or</li>
+						<li>of course, you can find me on <a href="http://www.facebook.com/coryevan">facebook</a>.</li>
+					</ul>
+					<em>That's all I've got – thanks for stopping by!</em>
+				</div>
+			</div>
+			<!-- <div id="contact" class="row">
+				<form action="">
+				</form>
+			</div> -->
+			<footer id="footer" class="row">
+				<div class="copyright spanning six columns">
+					&copy; <script>document.write(new Date().getFullYear());</script> Cory Evan Wright
+				</div>
+				<div id="colophon">
+					This site was handmade without the use of templates, and utilizes the following open-source projects:
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('#billboard').fullpage({
+					//fixedElements: '#nameplate',
+					anchors: ['firstPage'],
+					autoScrolling: false,
+					fitToSection:false,
+					css3: true
+				});
+			});
+		</script>
+	</body>
+</html>
