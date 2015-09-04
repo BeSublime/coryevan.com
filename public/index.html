@@ -9,21 +9,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- skeleton -->
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/skeleton.css">
 
-		<!-- fullpage.js -->
-		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Sorts+Mill+Goudy:400,400italic" type="text/css" rel="stylesheet">
 		<style>
-			#section0  {
-				background: url(images/everglades-panorama-compressor.jpg) no-repeat center center;
-				background-size: contain;
+			body {
+				font-family: 'Quattrocento Sans', sans-serif;
+			}
+			h1, h2, h3 {
+				font-family: 'Sorts Mill Goudy', Georgia, serif;
+			}
+			#billboard {
+				height: 768px;
+				height: 100vh;
+				width: 100vw;
+				max-width: 100%;
+				background: url(images/everglades-panorama.jpg) no-repeat center center;
+				background-size: 140%;
 				text-align: center;
+				position: relative;
 			}
 			.nameplate {
-				padding: 0 20px;
-				margin-top: -50px;
+				display: block;
+				width: 90%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -56%);
+				-ms-transform: translate(-50%, -56%);
+				-webkit-transform: translate(-50%, -56%);
+			}
+			#about {
+				padding-top: 42px;
 			}
 			#about ul {
 				padding-left: 24px;
@@ -36,13 +54,32 @@
 				padding-top: 12px;
 				border-top: 1px solid #ddd;
 			}
+
+			@media (min-width: 800px) {
+				#billboard {
+					background-size: 100%;
+				}
+				.nameplate {
+					width: 80%;
+				}
+			}
+			@media (min-width: 1200px) {
+				.nameplate {
+					width: 960px;
+				}
+			}
+			@media (min-width: 1800px) {
+				#billboard {
+					background-image: url(images/everglades-panorama@2x.jpg);
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<div id="billboard">
-			<div class="section" id="section0">
-				<img class="nameplate u-max-full-width" src="images/cew-wordmark-white.png">
-			</div>
+				<a class="nameplate" href="#about">
+					<img src="images/cew-wordmark-white.svg" alt="Cory Evan Wright">
+				</a>
 		</div>
 		<div class="container">
 			<!-- <div id="work" class="row">
@@ -79,7 +116,7 @@
 						<li><a href="http://www.flickr.com/photos/BeSublime">photos</a> on Flickr,</li>
 						<li><a href="https://github.com/BeSublime">code</a> on github,</li>
 						<li><a href="https://careers.stackoverflow.com/cory">r&eacute;sum&eacute;</a> on Stack Overflow Careers,</li>
-						<li><a href="http://pinboard.in/u:BeSublime">bookmarks</a> on Pinboard, or</li>
+						<li><a href="http://pinboard.in/u:BeSublime">bookmarks</a> on Pinboard, and</li>
 						<li>of course, you can find me on <a href="http://www.facebook.com/coryevan">facebook</a>.</li>
 					</ul>
 					<em>That's all I've got – thanks for stopping by!</em>
@@ -101,18 +138,5 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-
-		<script>
-			$(document).ready(function() {
-				$('#billboard').fullpage({
-					//fixedElements: '#nameplate',
-					anchors: ['firstPage'],
-					autoScrolling: false,
-					fitToSection:false,
-					css3: true
-				});
-			});
-		</script>
 	</body>
 </html>
