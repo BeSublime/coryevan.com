@@ -25,6 +25,10 @@ main {
   text-align: center;
 }
 
+main p {
+  text-align: left;
+}
+
 main img {
   border: 12px solid #F5EDF0;
 }
